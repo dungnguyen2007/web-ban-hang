@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <title>NHOM 10 STORE</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--Start Login-->
+    <div class="login-form-container">
+      <div id="close-login-btn" class="fas fa-times"></div>
+      <form action="">
+        <h3>Sign In</h3>
+        <span>username</span>
+        <input
+          type="email"
+          name=""
+          class="box"
+          placeholder="enter your email"
+          id=""
+        />
+        <span>password</span>
+        <input
+          type="password"
+          name=""
+          class="box"
+          placeholder="enter your password"
+          id=""
+        />
+        <div class="checkbox">
+          <input type="checkbox" name="" id="remember=me" />
+          <label for="remember-me">remember me</label>
+        </div>
+        <input type="submit" value="sign in" class="btn" />
+        <p>forget password ? <a href="#">click here</a></p>
+        <p>don't have an account ? <a href="#">create one</a></p>
+      </form>
+    </div>
+    <section id="header">
+      <a href="#"><img src="img/logo.png" class="logo" /></a>
+      <div>
+        <ul id="navbar">
+          <li><a href="index.html">TRANG CHỦ</a></li>
+          <li><a class="active" href="shop.html">CỬA HÀNG</a></li>
+          <li><a href="blog.html">TIN TỨC</a></li>
+          <li><a href="about.html">GIỚI THIỆU</a></li>
+          <li><a href="contact.html">LIÊN LẠC</a></li>
+          <li id="lg-bag"></li>
+          <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+        </ul>
+      </div>
+      <div id="mobile">
+        <i id="bar" class="fas fa-outdent"></i>
+      </div>
+      <div class="icon">
+        <a href="cart.html" class="fas fa-shopping-cart"></a>
+        <div id="login-btn" class="fas fa-user"></div>
+      </div>
+    </section>
+    <!--product -->
+    <section id="prodetails" class="section-p1">
+      <div class="pro-img">
+        <img src="" width="100%" id="mainimg" />
+      </div>
+      <div class="pro-details">
+        <h6 id="category"></h6>
+
+        <h4 id="name"></h4>
+
+        <h2 id="price"></h2>
+
+        <input type="number" value="1" />
+
+        <button class="normal">Thêm Vào Giỏ Hàng</button>
+      </div>
+    </section>
+    <!--letter-->
+    <section id="banner1" class="section-m1">
+      <h2><span>Săn Sale!</span> Càng mua càng rẻ</h2>
+    </section>
+    <!--cuoitrang-->
+    <footer id="section-p1">
+      <div class="col">
+        <img class="logo" src="img/logo.png" />
+        <h4>Thông Tin Liên Hệ</h4>
+        <p><strong>Địa Chỉ:</strong> XXX,YYY,VietNam</p>
+        <p><strong>Số Điện Thoại:</strong> 0123456789</p>
+        <p><strong>Email:</strong> nhom10@gmail.com</p>
+        <div class="follow">
+          <h4>Link</h4>
+          <div class="icon">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <h4>Liên Hệ</h4>
+        <a href="#">Về chúng tôi</a>
+        <a href="#">Thông tin giao hàng</a>
+        <a href="#">Chính sách bảo mật</a>
+        <a href="#">Điều khoản & Điều kiện</a>
+      </div>
+      <div class="col">
+        <h4>Hướng Dẫn Hỗ Trợ</h4>
+        <a href="#">Hướng dẫn cài đặt</a>
+        <a href="#">Quy định giao hàng</a>
+        <a href="#">Hình thức thanh toán</a>
+        <a href="#">Phí giao Hàng</a>
+        <a href="#">Đổi trả và hoàn tiền</a>
+      </div>
+      <div class="col install">
+        <h4>Tải Ứng Dụng</h4>
+        <p>Từ App Store hoặc Google Play</p>
+        <div class="row">
+          <img src="img/feature/app.png" width="150px" />
+          <img src="img/feature/play.png" width="150px" />
+        </div>
+        <p>Cổng thanh toán</p>
+        <img src="img/feature/tt.png" width="200px" />
+      </div>
+    </footer>
+    <script src="script/script.js"></script>
+    <script>
+      const products = [
+        {
+          id: 1,
+          name: "Cặp Spiderman",
+          category: "Marvel/Backpack",
+          price: "120.000",
+          image: "img/cap.png",
+        },
+        {
+          id: 2,
+          name: "Bút Màu Doraemon",
+          category: "Doraemon/Pencil",
+          price: "47.000",
+          image: "img/butmau.jpg",
+        },
+        {
+          id: 3,
+          name: "Bút Chì Elsa",
+          category: "Disney/Pencil",
+          price: "22.000",
+          image: "ct/el1.jpg",
+        },
+        {
+          id: 4,
+          name: "Kéo Doraemon",
+          category: "Doraemon/Scissors",
+          price: "55.000",
+          image: "img/keo.jpg",
+        },
+        {
+          id: 5,
+          name: "Bút Chì Doraemon",
+          category: "Doraemon/Pencil",
+          price: "20.000",
+          image: "img/but.jpg",
+        },
+        {
+          id: 6,
+          name: "Sticker Doraemon",
+          category: "Doraemon/Sticker",
+          price: "10.000",
+          image: "img/stk.jpg",
+        },
+        {
+          id: 7,
+          name: "Vở Doraemon",
+          category: "Doraemon/Book",
+          price: "7.000",
+          image: "img/vod.png",
+        },
+        {
+          id: 8,
+          name: "Hộp Bút Doraemon",
+          category: "Doraemon/PencilCase",
+          price: "35.000",
+          image: "img/hopb.png",
+        },
+        {
+          id: 9,
+          name: "Cặp Doraemon",
+          category: "Doraemon/Backpack",
+          price: "200.000",
+          image: "img/capdo.jpg",
+        },
+        {
+          id: 10,
+          name: "Tẩy Doraemon",
+          category: "Doraemon/Eraser",
+          price: "30.000",
+          image: "img/tay.jpg",
+        },
+        {
+          id: 11,
+          name: "Bút Màu Elsa",
+          category: "Disney/Pencil",
+          price: "50.000",
+          image: "ct/el2.jpg",
+        },
+        {
+          id: 12,
+          name: "Sticker Elsa",
+          category: "Disney/Sticker",
+          price: "13.000",
+          image: "ct/el3.jpg",
+        },
+        {
+          id: 13,
+          name: "Vở Elsa",
+          category: "Disney/Book",
+          price: "10.000",
+          image: "ct/el7.png",
+        },
+        {
+          id: 14,
+          name: "Hộp Bút Elsa",
+          category: "Disney/PencilCase",
+          price: "37.000",
+          image: "ct/el8.png",
+        },
+        {
+          id: 15,
+          name: "Kéo Elsa",
+          category: "Disney/Scissors",
+          price: "66.000",
+          image: "ct/el4.jpg",
+        },
+        {
+          id: 16,
+          name: "Cặp Elsa",
+          category: "Disney/Backpack",
+          price: "217.000",
+          image: "ct/el5.jpg",
+        },
+        {
+          id: 17,
+          name: "Tẩy Elsa",
+          category: "Disney/Eraser",
+          price: "31.000",
+          image: "ct/el6.jpg",
+        },
+        {
+          id: 18,
+          name: "Bút Chì Marvel",
+          category: "Marvel/Pencil",
+          price: "25.000",
+          image: "ah/ah1.jpg",
+        },
+        {
+          id: 19,
+          name: "Bút Màu Spiderman",
+          category: "Marvel/Pencil",
+          price: "58.000",
+          image: "ah/ah2.jpg",
+        },
+        {
+          id: 20,
+          name: "Sticker Ironman",
+          category: "Marvel/Sticker",
+          price: "20.000",
+          image: "ah/ah3.jpg",
+        },
+        {
+          id: 21,
+          name: "Vở Batman",
+          category: "Marvel/Book",
+          price: "15.000",
+          image: "ah/ah.png",
+        },
+        {
+          id: 22,
+          name: "Hộp Bút Captain",
+          category: "Marvel/PencilCase",
+          price: "40.000",
+          image: "ah/ah6.pmng.webp",
+        },
+        {
+          id: 23,
+          name: "Kéo Superman",
+          category: "Marvel/Scissors",
+          price: "70.000",
+          image: "ah/ah4.jpg",
+        },
+        {
+          id: 24,
+          name: "Tẩy Marvel",
+          category: "Marvel/Eraser",
+          price: "41.000",
+          image: "ah/ah5.jpg",
+        },
+        {
+          id: 25,
+          name: "Kẹp photo",
+          category: "School",
+          price: "15.000",
+          image: "ok/a1.png",
+        },
+        {
+          id: 26,
+          name: "Giấy A4",
+          category: "School",
+          price: "35.000",
+          image: "ok/a2.png",
+        },
+        {
+          id: 27,
+          name: "Kéo",
+          category: "School",
+          price: "50.000",
+          image: "ok/a3.png",
+        },
+        {
+          id: 28,
+          name: "Keo Dán",
+          category: "School",
+          price: "16.000",
+          image: "ok/a4.png",
+        },
+        {
+          id: 29,
+          name: "Bút Màu",
+          category: "School",
+          price: "20.000",
+          image: "ok/a5.png",
+        },
+        {
+          id: 30,
+          name: "Bút Highlight",
+          category: "School",
+          price: "15.000",
+          image: "ok/a6.png",
+        },
+        {
+          id: 31,
+          name: "Giấy Nhớ",
+          category: "School",
+          price: "13.000",
+          image: "ok/a7.png",
+        },
+        {
+          id: 32,
+          name: "Giấy Kiểm Tra",
+          category: "School",
+          price: "30.000",
+          image: "ok/a8.png",
+        },
+        {
+          id: 33,
+          name: "Cặp Sách",
+          category: "School",
+          price: "100.000",
+          image: "ok/a9.png",
+        },
+        {
+          id: 34,
+          name: "Vở",
+          category: "School",
+          price: "8.000",
+          image: "ok/a10.png",
+        },
+        {
+          id: 35,
+          name: "Gọt Bút Chì",
+          category: "School",
+          price: "9.000",
+          image: "ok/a11.png",
+        },
+        {
+          id: 36,
+          name: "E ke",
+          category: "School",
+          price: "17.000",
+          image: "ok/a12.png",
+        },
+        {
+          id: 37,
+          name: "Compa",
+          category: "School",
+          price: "20.000",
+          image: "ok/a13.png",
+        },
+        {
+          id: 38,
+          name: "Thước Kẻ",
+          category: "School",
+          price: "14.000",
+          image: "ok/a14.png",
+        },
+        {
+          id: 39,
+          name: "Tẩy",
+          category: "School",
+          price: "10.000",
+          image: "ok/a15.png",
+        },
+        {
+          id: 40,
+          name: "Bút Chì",
+          category: "School",
+          price: "3.000",
+          image: "ok/a16.png",
+        },
+        {
+          id: 41,
+          name: "Bút Bi",
+          category: "School",
+          price: "5.000",
+          image: "ok/a17.png",
+        },
+        {
+          id: 42,
+          name: "Bảng",
+          category: "School",
+          price: "40.000",
+          image: "ok/a18.png",
+        },
+        {
+          id: 43,
+          name: "Lọ Mực",
+          category: "School",
+          price: "22.000",
+          image: "ok/a19.png",
+        },
+        {
+          id: 44,
+          name: "Phấn",
+          category: "School",
+          price: "29.000",
+          image: "ok/a20.png",
+        },
+        {
+          id: 45,
+          name: "Bút Xóa",
+          category: "School",
+          price: "33.000",
+          image: "ok/a21.png",
+        },
+      ];
+
+      const params = new URLSearchParams(window.location.search);
+      const id = Number(params.get("id"));
+
+      const product = products.find((p) => p.id === id);
+
+      if (product) {
+        document.getElementById("mainimg").src = product.image;
+        document.getElementById("category").textContent = product.category;
+        document.getElementById("name").textContent = product.name;
+        document.getElementById("price").textContent = product.price;
+      }
+      const addBtn = document.querySelector(".normal");
+      const qtyInput = document.querySelector("input[type='number']");
+
+      addBtn.addEventListener("click", () => {
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+        const quantity = Number(qtyInput.value);
+
+        const existing = cart.find((item) => item.id === product.id);
+
+        if (existing) {
+          existing.quantity += quantity;
+        } else {
+          cart.push({
+            id: product.id,
+            name: product.name,
+            price: product.price,
+            image: product.image,
+            quantity: quantity,
+          });
+        }
+
+        localStorage.setItem("cart", JSON.stringify(cart));
+
+        alert("Đã thêm vào giỏ hàng!");
+      });
+    </script>
+  </body>
+</html>
